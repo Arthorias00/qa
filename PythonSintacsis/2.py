@@ -44,5 +44,20 @@ print(spisoc_bez_povtorenii)
 #      - найдите значения, которые встречаются в обоих множествах
 #      - найдите значения, которые не встречаются в обоих множествах
 #      - проверьте являются ли эти множества подмножествами друг друга 
+set10 = {100, 'b'}
 set1 = {'a', 'z', 1, 5, 9, 12, 100, 'b'}
 set2 = {5, 'z', 1, 8, 9, 21, 100, 'l', 785}
+def returnMatches(a, b):
+    return list(set(a) & set(b))
+set3 = (set1 - set2) | (set2 - set1)
+print(set3)
+print(returnMatches(set1, set2))
+def podmnog(a, b):
+    if a.issubset(b):
+        print(f'a - подмножество b: {a}')
+    elif b.issubset(a):
+        print(f'b - подмножество a: {b}')
+    else:
+        print('Подмножеств нет')
+
+podmnog(set1, set10)
