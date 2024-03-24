@@ -39,21 +39,21 @@
 # Задание 2.5.
 # Напишите программу калькулятор, которая принимает 2 значения и арифметическое действие и в конце выводит их в виде
 # Param1 operator param2 = result
-# sign = input('Знак операции: ')
-# a = int(input('Число 1: '))
-# b = int(input('Число 2: '))
+sign = input('Знак операции: ')
+a = int(input('Число 1: '))
+b = int(input('Число 2: '))
 
-# match sign:
-#     case '+':
-#         print(f'{a} {sign} {b} = {a + b}')
-#     case '-':
-#         print(f'{a} {sign} {b} = {a - b}')
-#     case '/':
-#         if b != 0:
-#             print(f'{a} {sign} {b} = {round(a / b, 2)}')
-#         else:
-#             print(f'na 0 delit nelza {a} {sign} {b} = ERROR')
-#     case '*':
-#         print(f'{a} {sign} {b} = {a * b}')
-#     case _:
-#         print('Неверный знак операции')
+match sign:
+    case '+':
+        print(f'{a} {sign} {b} = {a + b}')
+    case '-':
+        print(f'{a} {sign} {b} = {a - b}')
+    case '/':
+        if b != 0:
+            print(f'{a} {sign} {b} = {round(a / b, 2)}')
+        else:
+            print(f'na 0 delit nelza {a} {sign} {b} = ERROR')
+    case '*':
+        print(f'{a} {sign} {b} = {a * b}')
+    case _:
+        print('Неверный знак операции')
