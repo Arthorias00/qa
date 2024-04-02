@@ -37,23 +37,25 @@
 # result = lambda x: reduce(lambda a, b: a * b, x)
 # print(result(mylist))
 # 4.5. Декоратор который вычитывает сколько выполнялась функция
-import time
-class mamy():
-    def __init__(self, a):
-        self.a = a
-    def lolololo (func):
-        def wrapper():
-           start_time = time.time()
-           func()
-           end_time = time.time()
-           print(f"Функция {func.__name__} выполнялась {end_time - start_time:.2f} секунд")
-        return wrapper
+# import time
+# class mamy():
+#     def __init__(self, a):
+#         self.a = a
+#     def lolololo (func):
+#         def wrapper():
+#            start_time = time.time()
+#            func()
+#            end_time = time.time()
+#            print(f"Функция {func.__name__} выполнялась {end_time - start_time:.2f} секунд")
+#         return wrapper
    
-    @lolololo
-    def funcyyyyyys():
-        print('its work')
-        time.sleep(5)
-ggg = mamy
-ggg.funcyyyyyys()   
+#     @lolololo
+#     def funcyyyyyys():
+#         print('its work')
+#         time.sleep(5)
+# ggg = mamy
+# ggg.funcyyyyyys()   
 # 4.6. Создайте файл my_calcl.py и пропишите в нем минимум 4 функции, выполняющие базовые арифметические вычисления.
 # Примените эти функции в качестве методов в другом файле.
+import mycycl
+mycycl.art2('lol')
