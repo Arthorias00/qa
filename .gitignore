@@ -2,3 +2,6 @@
 test1.py
 answer.txt
 url.txt
+.vscode
+/path
+get-pip.py
