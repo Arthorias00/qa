@@ -12,3 +12,7 @@ def open_page():
 
 def test_open_page():
     open_page()
+
+# для теста добавления файла в друг директорию пайтест
+class A:
+    x = 22
