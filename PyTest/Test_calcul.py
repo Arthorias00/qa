@@ -1,17 +1,17 @@
-from PythonSintacsis.cool_cal import Calculator
-cal = Calculator()
-def test_addition():
-    cal.push('C')
-    cal.push('4')
-    cal.push('+')
-    cal.push('7')
-    result = cal.push('=')
+
+
+def test_addition(calculator):
+    calculator.push('C')
+    calculator.push('4')
+    calculator.push('+')
+    calculator.push('7')
+    result = calculator.push('=')
     assert result == "11"
 
-def test_substruction():
-    cal.push('C')
-    cal.push('7')
-    cal.push('-')
-    cal.push('4')
-    result = cal.push('=')
+def test_substruction(calculator):
+    calculator.push('C')
+    calculator.push('7')
+    calculator.push('-')
+    calculator.push('4')
+    result = calculator.push('=')
     assert result == "3"
